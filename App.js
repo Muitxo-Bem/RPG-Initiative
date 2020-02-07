@@ -2,7 +2,7 @@ import React from 'react';
 import {StatusBar , YellowBox } from 'react-native';
 import Routes from './src/routes';
 
-YellowBox.ignoreWarnings(['Unrecognized Websocket']);
+YellowBox.ignoreWarnings(['Unrecognized Websocket','Warning: componentWillReceiveProps']);
 
 export default function App() {
   return (

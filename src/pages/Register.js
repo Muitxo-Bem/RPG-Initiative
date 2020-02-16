@@ -50,42 +50,41 @@ function Register({navigation}){
 }
 const styles = StyleSheet.create({
     container:{
-        flexDirection:'row',
-        flex:1,
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'nowrap',
+        justifyContent: 'flex-start',
+        alignContent: 'flex-start',
+        alignItems: 'flex-start',
         backgroundColor:'#848484',
+        flex: 1,
     },
     form:{
-            flex: 0.5,
-            backgroundColor:'#FFF',
-            top: 5,
-            width: 180,
-            borderWidth:1,
-            left:3,
-            borderColor: 'black',
-            flexDirection: 'row',
-            paddingLeft:3,
-            fontSize:18,
+        alignSelf: 'flex-start',
+        backgroundColor: '#FFF',
+        width: 180,
+        borderWidth: 1,
+        borderColor: 'black',
+        top: 5,
+        paddingLeft:3,
         ...Platform.select({
             ios:{
-                height: 38,
+                height:38,
             },
             android:{
-                height: 47,
-                
+                height:47,
             }
         })
     },
     mod:{
-        flex: 0.165,
-        left: 7,
-        top:5,
-        
-        backgroundColor: 'blue',
-        borderColor: 'black',
+       left: 3,
+       top:5,
         
     },
     confirmButton:{
-        
+        left:4,
+        top:5,
+        borderRadius:50,
     }
     
 });
